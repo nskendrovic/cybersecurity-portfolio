@@ -36,6 +36,18 @@ Risk-based remediation initiative designed to convert IAM security findings into
 
 ---
 
+## 🧪 Hands-On Labs & Architecture Projects
+
+### [☁️ Azure Landing Zone](labs/azure-landing-zone/README.md)
+
+Hands-on Azure architecture project focused on designing and implementing a secure, governed enterprise landing zone.
+
+**Focus Areas:** Azure Architecture · Management Groups · Azure Policy · RBAC · Networking · Defender for Cloud · Monitoring · Infrastructure as Code
+
+> 🚧 **In Progress** — Architecture and security controls are being implemented and documented as the environment is built.
+
+---
+
 ## 🔧 Core Security Areas
 
 - Identity & Access Management
@@ -53,9 +65,9 @@ Risk-based remediation initiative designed to convert IAM security findings into
 
 ## 📂 Portfolio Roadmap
 
-Additional sanitized case studies will be added as projects are completed, including:
+Additional projects and sanitized case studies planned:
 
-- Azure Security Posture Assessment
+- Azure Landing Zone — **In Progress**
 - Endpoint Security & CIS Hardening
 - Cloud Application Security
 - BYOD & Mobile Security
