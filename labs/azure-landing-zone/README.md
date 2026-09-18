@@ -46,12 +46,83 @@ It serves as a practical portfolio project showcasing cloud security architectur
 - Apply **Azure CAF principles** for governance and security  
 - Implement **Zero Trust** identity and access controls  
 - Configure **centralized monitoring and diagnostics**  
-- Build a **portfolio-ready cloud security architecture**  
+- Build a **portfolio-ready cloud security architecture**
+
+---
+  
+## Architecture Diagram
+This diagram shows the current state of the Azure Landing Zone, including management groups, subscriptions, resource groups, and core networking/logging components.
+
+---
+
+```mermaid
+flowchart TB
+    tenant["Tenant Root"]
+    mg_root["Management Groups"]
+    mg_platform["Platform MG"]
+    mg_prod["Prod MG"]
+    mg_nonprod["NonProd MG"]
+
+    sub_platform["Platform Subscription"]
+    rg_hub["rg-network-hub"]
+    vnet_hub["vnet-hub"]
+    fw_subnet["AzureFirewallSubnet – planned"]
+    rg_logging["rg-logging"]
+    law["Log Analytics Workspace"]
+    rg_security["rg-security"]
+    sec_tools["Defender / Sentinel – planned"]
+    rg_shared["rg-shared"]
+
+    tenant --> mg_root
+    mg_root --> mg_platform
+    mg_root --> mg_prod
+    mg_root --> mg_nonprod
+
+    mg_platform --> sub_platform
+    sub_platform --> rg_hub
+    rg_hub --> vnet_hub
+    vnet_hub --> fw_subnet
+
+    sub_platform --> rg_logging
+    rg_logging --> law
+
+    sub_platform --> rg_security
+    rg_security --> sec_tools
+
+    sub_platform --> rg_shared
+```
+---
+
+## IAM Flow Diagram
+This diagram shows how identity authentication events move through Entra ID, Conditional Access, logging, and alerting within the Landing Zone. It includes break‑glass accounts, baseline CA policies, diagnostic settings, and Log Analytics integration.
+
+```mermaid
+flowchart TB
+    user["User / Break‑Glass Account"]
+    sign_in["Entra ID Sign‑In"]
+    ca["Conditional Access Policies"]
+    decision["Access Decision (Allow / Block / MFA)"]
+    logs["Sign‑In Logs"]
+    diag["Diagnostic Settings"]
+    law["Log Analytics Workspace"]
+    alert["Break‑Glass Alert Rule"]
+    notify["Notification / Incident"]
+
+    user --> sign_in
+    sign_in --> ca
+    ca --> decision
+    decision --> logs
+    logs --> diag
+    diag --> law
+    law --> alert
+    alert --> notify
+```
+
 
 ---
 
 ## Author
 **Nikola Skendrovic**  
-Security Analyst | Cloud Security Engineer (in progress)  
-CCSP Certified | WGU Cybersecurity Student  
+Security Analyst | Cloud Security Engineer  
+CCSP Certified | GSEC, GCIH | CompTIA Net+ Sec+ | WGU Cybersecurity Student  
 
