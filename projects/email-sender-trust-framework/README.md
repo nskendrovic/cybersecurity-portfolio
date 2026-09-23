@@ -55,7 +55,8 @@ Reason: Long-established domain, clean reputation, valid SPF/MX.
 ```
 email-sender-trust-framework/
 ├── README.md
-├── paper.pdf
+├── Email_Sender_Trust_Framework_Paper.pdf
+├── email_sender_trust_check.py
 │
 ├── src/
 │   ├── main.py
