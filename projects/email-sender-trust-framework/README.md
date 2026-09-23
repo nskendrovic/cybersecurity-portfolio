@@ -52,3 +52,28 @@ Score: **100**
 Reason: Long-established domain, clean reputation, valid SPF/MX.
 
 ## Folder Structure
+email-sender-trust-framework/
+├── README.md
+├── paper.pdf
+│
+├── src/
+│   ├── main.py
+│   └── modules/
+│       ├── dns_validation.py
+│       ├── whois_lookup.py
+│       ├── abuseipdb_query.py
+│       └── scoring_model.py
+│
+└── examples/
+├── sample1.eml
+├── sample2.eml
+└── output_report.json
+
+
+
+## Future Enhancements
+- Add DKIM and DMARC validation  
+- Integrate VirusTotal, IPQualityScore, Cisco Talos  
+- Support IPv6 and ASN reputation  
+- Build CLI or web dashboard  
+- Add Gmail API for real-time inbox monitoring
