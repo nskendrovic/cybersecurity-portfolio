@@ -52,6 +52,7 @@ Score: **100**
 Reason: Long-established domain, clean reputation, valid SPF/MX.
 
 ## Folder Structure
+```
 email-sender-trust-framework/
 ├── README.md
 ├── paper.pdf
@@ -68,7 +69,7 @@ email-sender-trust-framework/
 ├── sample1.eml
 ├── sample2.eml
 └── output_report.json
-
+```
 
 
 ## Future Enhancements
