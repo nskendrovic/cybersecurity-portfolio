@@ -36,6 +36,14 @@ Risk-based remediation initiative designed to convert IAM security findings into
 
 ---
 
+### [📧 Email Sender Trust Framework](projects/email-sender-trust-framework/README.md)
+
+A Python-based system for evaluating the trustworthiness of email senders using DNS validation, WHOIS domain age, IP reputation intelligence, and behavioral heuristics. Designed to help analysts identify suspicious senders, misconfigured domains, and potential phishing attempts.
+
+**Key Areas:** Email Security · Threat Detection · DNS · WHOIS · AbuseIPDB · Python Automation
+
+---
+
 ## 🧪 Hands-On Labs & Architecture Projects
 
 ### [☁️ Azure Landing Zone](labs/azure-landing-zone/README.md)
