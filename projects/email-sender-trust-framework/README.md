@@ -4,8 +4,11 @@
 The Email Sender Trust Framework is a modular Python-based system for evaluating the trustworthiness of email senders using DNS validation, WHOIS domain age, IP reputation intelligence, and behavioral heuristics. It provides transparent, scriptable scoring logic that helps analysts identify suspicious senders, misconfigured domains, and potential phishing attempts.
 
 ## Architecture
+
+## Input
 - Input: Raw `.eml` files  
-- Core Modules:
+
+## Core Modules
   - Email parsing  
   - DNS validation (SPF, MX)  
   - WHOIS domain age lookup  
