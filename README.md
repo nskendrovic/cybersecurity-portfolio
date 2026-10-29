@@ -36,6 +36,16 @@ Risk-based remediation initiative designed to convert IAM security findings into
 
 ---
 
+### [🔑 Enterprise Vulnerability Management Program](projects/vulnerability-management-program.md)
+
+Enterprise vulnerability management initiative focused on establishing a structured remediation program using Microsoft Defender Vulnerability Management. The projectonciliation, vulnerability prioritization, remediation governance, SLA development, risk-based remediation planning, KPI reporting, and operational procedures for continuous vulnerability management.
+
+**Key Areas:** Vulnerability Management · Microsoft Defender Vulnerability Management · Microsoft Intune · Risk Management · Security Operations · Endpoint Security · Remediation Governance · Security Metrics
+
+[View Case Study →](projects/vulnerability-management-program.md)
+
+---
+
 ### [📧 Email Sender Trust Framework](projects/email-sender-trust-framework/README.md)
 
 A Python-based system for evaluating the trustworthiness of email senders using DNS validation, WHOIS domain age, IP reputation intelligence, and behavioral heuristics. Designed to help analysts identify suspicious senders, misconfigured domains, and potential phishing attempts.
