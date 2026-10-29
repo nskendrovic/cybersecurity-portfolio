@@ -36,7 +36,7 @@ Risk-based remediation initiative designed to convert IAM security findings into
 
 ---
 
-### [🔑 Enterprise Vulnerability Management Program](projects/vulnerability-management-program.md)
+### [🚨 Enterprise Vulnerability Management Program](projects/vulnerability-management-program.md)
 
 Enterprise vulnerability management initiative focused on establishing a structured remediation program using Microsoft Defender Vulnerability Management. The projectonciliation, vulnerability prioritization, remediation governance, SLA development, risk-based remediation planning, KPI reporting, and operational procedures for continuous vulnerability management.
 
